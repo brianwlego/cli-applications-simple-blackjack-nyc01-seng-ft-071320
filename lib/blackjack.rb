@@ -46,13 +46,12 @@ def hit?(current_card_total)
     deal_card+current_card_total
   else
     invalid_command
-    hit?
   end
   #binding.pry
 end
 
 def invalid_command
-  puts "Please enter a valid command"
+  p "Please enter a valid command"
 end
 
 #####################################################
