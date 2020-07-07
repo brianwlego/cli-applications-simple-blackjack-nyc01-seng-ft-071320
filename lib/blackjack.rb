@@ -34,19 +34,19 @@ def initial_round
   display_card_total(total)
 end
 
-
-
-def hit?(current_card_total)
-  prompt_user
-  input = get_user_input
-  def hit_stay
-    case input 
+def hit_stay
+  case input 
     when "s"
       current_card_total
     when "h"
       deal_card+current_card_total
-    end
   end
+end
+
+def hit?(current_card_total)
+  prompt_user
+  input = get_user_input
+  hit_stay
   if input != "s" or "h"
     invalid_command
     prompt_user
