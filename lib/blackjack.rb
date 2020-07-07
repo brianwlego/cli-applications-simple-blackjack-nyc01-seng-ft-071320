@@ -35,7 +35,7 @@ end
 def hit?(current_card_total)
   prompt_user
   get_user_input
-  case hit 
+  case get_user_input 
   when "s"
     current_card_total
   when "h"
