@@ -25,15 +25,17 @@ def end_game (players_card_total)
   puts "Sorry, you hit #{players_card_total}. Thanks for playing!"
 end
 
-def invalid_command
-  puts "Please enter a valid command"
-end
+
 
 def initial_round
   card_one = deal_card
   card_two = deal_card
   total = card_one + card_two
   display_card_total(total)
+end
+
+def invalid_command
+  puts "Please enter a valid command"
 end
 
 def hit?(current_card_total)
