@@ -35,7 +35,7 @@ end
 def hit?(current_card_total)
   prompt_user
   get_user_input
-  binding.pry
+  #binding.pry
   case get_user_input 
   when "s"
     current_card_total
