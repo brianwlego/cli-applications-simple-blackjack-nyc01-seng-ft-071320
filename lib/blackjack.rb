@@ -44,10 +44,12 @@ def hit?(current_card_total)
       current_card_total
     when "h"
       deal_card+current_card_total
-    else
+    when
       invalid_command
+      prompt_user
+      input = get_user_input
+      current_card_total
   end
-  prompt_user
 end
 
 def invalid_command
