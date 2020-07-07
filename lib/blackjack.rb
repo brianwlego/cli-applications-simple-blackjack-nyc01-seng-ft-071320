@@ -59,16 +59,12 @@ end
 #####################################################
 
 def runner
-
   welcome
   total = initial_round
-  #binding.pry
   until total > 21
     total = hit?(total)
     display_card_total(total)
-    #binding.pry
   end
   end_game(total)
-  #binding.pry
 end
     
