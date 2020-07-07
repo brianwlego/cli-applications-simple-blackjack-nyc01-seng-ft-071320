@@ -62,10 +62,10 @@ def runner
   total = 0 
   welcome
   total += initial_round
-  binding.pry
-  #until total > 21
-  #total << hit?(total)
-  #end
+  #binding.pry
+  until total > 21
+    total += hit?(total)
+  end
   end_game(total)
 end
     
