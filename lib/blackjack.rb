@@ -46,11 +46,11 @@ def hit?(current_card_total)
     current_card_total
   when "h"
     deal_card+current_card_total
-  end
-  if input != "s" || "h"
+  when != "s" || "h"
     invalid_command
     prompt_user
-    case input
+  end
+  
 end
 
 
