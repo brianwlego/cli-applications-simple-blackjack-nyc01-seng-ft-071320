@@ -39,7 +39,6 @@ def hit?(current_card_total)
   case get_user_input 
   when "s"
     current_card_total
-    
   when "h"
     deal_card+current_card_total
   else
