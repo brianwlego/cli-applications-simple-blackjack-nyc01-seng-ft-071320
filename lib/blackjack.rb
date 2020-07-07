@@ -35,11 +35,11 @@ end
 def hit?(current_card_total)
   prompt_user
   get_user_input
-  
+  binding.pry
   case get_user_input 
   when "s"
     current_card_total
-    binding.pry
+    
   when "h"
     deal_card+current_card_total
   else
