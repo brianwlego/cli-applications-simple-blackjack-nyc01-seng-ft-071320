@@ -46,13 +46,12 @@ end
 def hit?(current_card_total)
   prompt_user
   input = get_user_input
-  hit_stay (input)
   if input != "s" or "h"
     invalid_command
     prompt_user
     hit_stay
   end 
-  
+  hit_stay (input)
 end
 
 def invalid_command
