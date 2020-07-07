@@ -43,6 +43,7 @@ def hit?(current_card_total)
     case input 
     when "s"
       current_card_total
+      binding.pry
     when "h"
       deal_card+current_card_total
     end
