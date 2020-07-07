@@ -45,8 +45,7 @@ def hit?(current_card_total)
   when "h"
     deal_card+current_card_total
   else
-    puts invalid_command
-    puts prompt_user
+    return invalid_command
   end
   #binding.pry
 end
