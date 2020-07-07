@@ -5,7 +5,7 @@ def welcome
 end
 
 def deal_card
-  card.rand(1..11)
+  prng.rand(1..11)
   binding.pry
 end
 
