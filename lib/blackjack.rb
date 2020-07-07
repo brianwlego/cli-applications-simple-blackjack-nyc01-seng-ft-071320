@@ -34,8 +34,7 @@ def initial_round
   display_card_total(total)
 end
 
-def hit_stay
-  input = get_user_input
+def hit_stay (input)
   case input 
     when "s"
       current_card_total
@@ -47,7 +46,7 @@ end
 def hit?(current_card_total)
   prompt_user
   input = get_user_input
-  hit_stay
+  hit_stay (input)
   if input != "s" or "h"
     invalid_command
     prompt_user
