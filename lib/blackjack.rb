@@ -35,6 +35,7 @@ def initial_round
 end
 
 def hit_stay
+  input = get_user_input
   case input 
     when "s"
       current_card_total
