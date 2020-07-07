@@ -37,7 +37,7 @@ def hit?(current_card_total)
   get_user_input
   binding.pry
   if get_user_input == "s"
-    display_card_total(current_card_total)
+    puts "Your cards add up to #{current_card_total}"
   elsif get_user_input == "h"
     display_card_total(deal_card + current_card_total)
   else
