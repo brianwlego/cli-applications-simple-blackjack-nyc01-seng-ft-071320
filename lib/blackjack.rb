@@ -62,7 +62,7 @@ def runner
   welcome
   final_total = 0
   final_total += initial_round 
-  until final_total > 21
+  until final_total > 21 || input == "s"
     hit?(final_total)
   end
   end_game(final_total)
