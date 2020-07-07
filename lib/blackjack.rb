@@ -24,7 +24,9 @@ end
 def end_game (players_card_total)
   puts "Sorry, you hit #{players_card_total}. Thanks for playing!"
 end
-
+def invalid_command
+  puts "Please enter a valid command"
+end
 def initial_round
   card_one = deal_card
   card_two = deal_card
@@ -47,9 +49,7 @@ def hit?(current_card_total)
   end
 end
 
-def invalid_command
-  puts "Please enter a valid command"
-end
+
 
 #####################################################
 # get every test to pass before coding runner below #
