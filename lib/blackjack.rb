@@ -30,15 +30,24 @@ def initial_round
   card_two = deal_card
   total = card_one + card_two
   display_card_total(total)
-  #binding.pry
 end
 
-def hit?
-  # code hit? here
+def hit?(current_card_total)
+  prompt_user
+  get_user_input
+  if get_user_input == "s"
+    display_card_total(current_card_total)
+  elsif get_user_input == "h"
+    display_card_total(deal_card + current_card_total)
+  else
+    invalid_command
+    prompt_user
+    get_user_input
+  end  
 end
 
 def invalid_command
-  # code invalid_command here
+  puts "Please enter a valid command"
 end
 
 #####################################################
