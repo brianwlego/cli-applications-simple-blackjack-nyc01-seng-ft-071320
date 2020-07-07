@@ -64,7 +64,7 @@ def runner
   total = initial_round
   #binding.pry
   until total > 21
-    total += hit?(total)
+    total = hit?(total)
     display_card_total(total)
     binding.pry
   end
